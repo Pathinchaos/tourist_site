@@ -1,0 +1,195 @@
+@font-face {
+	font-family: 'VNF-Semilla';
+	src: url('./fonts/vnf-semilla.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/vnf-semilla.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/vnf-semilla.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/vnf-semilla.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/vnf-semilla.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/vnf-semilla.svg#vnf-semilla') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+.run_string{
+    margin: 55px; 
+  }
+  
+  .run_string_wrapper{
+    display: flex;
+    list-style-type: none;
+    /* padding-left: 0; */
+    /* width: fit-content; */
+    /* transform: translate(100%, 0); */
+    animation: ticker 15s linear infinite;
+  }
+  
+  .run_string_item{
+    /* display: flex; */
+    /* padding: 15px 10px; */
+    /* flex-shrink: 0; */
+    /* white-space: nowrap; */
+    font-size: 50px;
+    /* font-weight: 500; */
+    color: rgb(255, 14, 14);
+  }
+  
+  @keyframes ticker {
+    0% {        
+      transform: translate(100%, 0);
+    }    
+    99% {    
+      opacity: 1;
+      transform: translate(-100%, 0);
+   }
+   100% {
+      opacity: 0;
+      transform: translate(-100%, 0);
+   }   
+  }
+
+body {
+    font-family: 'VNF-Semilla';
+    background-image: url(164ef543-0322-41b3-b080-a805eb4b4816.jpg);
+    background-size: 100% 100%;
+    padding: 0;
+    margin: 0;
+    background-attachment: local;
+    background-image: url(https://imgcdn.stablediffusionweb.com/2024/5/7/9b699de5-c746-47a5-aced-9eb4e24c431b.jpg);
+}
+
+
+.div_main_welcome{
+    flex-wrap: wrap;
+    
+    
+    
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    
+    
+    justify-content: space-around;
+    
+    text-align: center;
+}
+
+
+h1{
+    margin: 40px;
+}
+
+
+.welcome{
+    flex-wrap: wrap;
+    padding: 15px;
+    padding-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.781);
+    color: black;
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+
+.highlights {
+    flex-wrap: wrap;
+    padding: 15px;
+    padding-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.781);
+    color: black;
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+.details{
+    flex-wrap: wrap;
+    padding: 15px;
+    padding-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.781);
+    color: black;
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+.details img{
+    width: 70px;
+}
+
+.highlights .box {
+    text-align: center;
+}
+main h1{
+    text-align: center;
+    color: rgb(3, 3, 3);
+}
+.myForm{
+    background-color: aquamarine;
+    border-radius: 10px;
+    
+}
+
+.mb-3{
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* display:contents; */
+    display:run-in;
+    /* display: inline-table; */
+    align-items: center;
+
+    
+}
+
+
+@media (max-width: 768px) {
+
+
+    .inner_form {
+        
+        flex-direction: column;
+        width: 75%;
+        padding: 10px;
+        border-radius: 15px;
+
+    }
+
+    .highlights {
+        
+        flex-direction: column;
+        width: 75%;
+        padding: 10px;
+        border-radius: 15px;
+
+    }
+
+
+}
+
+@media (max-width: 520px) {
+
+
+    .inner_form {
+        
+        flex-direction: column;
+        width: 75%;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .highlights {
+        
+        flex-direction: column;
+        width: 75%;
+        padding: 10px;
+        border-radius: 15px;
+
+    }
+}
